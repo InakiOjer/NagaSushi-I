@@ -1,0 +1,79 @@
+/* Establece el modelo de caja para todos los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    background-color: rgb(255, 255, 255); /* Color de fondo */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 300; /* Grosor de la fuente */
+    display: flex; /* Flexbox para centrar contenido vertical y horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    min-height: 100vh; /* Altura mínima igual al 100% del viewport */
+}
+
+/* Estilos para los títulos */
+h1 {
+    color: black; /* Color de texto */
+}
+
+/* Estilos para el formulario */
+#Formulario {
+    background-color: #ccc; /* Color de fondo */
+    border-radius: 5px; /* Radio de borde */
+    width: 300px; /* Ancho del formulario */
+}
+
+/* Estilos para el formulario dentro de un contenedor */
+form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 10px auto; /* Margen superior e inferior de 10px, centrado horizontalmente */
+    padding: 0.5rem 1rem; /* Relleno del formulario */
+}
+
+/* Estilos para los títulos dentro del formulario */
+form h1 {
+    padding: 5px 0; /* Relleno superior e inferior */
+    font-size: 1.4rem; /* Tamaño de fuente */
+    font-weight: normal; /* Grosor de la fuente */
+    text-align: center; /* Alineación centrada */
+}
+
+/* Estilos para todos los elementos */
+#todo {
+    margin-bottom: 0.75rem; /* Margen inferior */
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: inline-block; /* Visualización en línea */
+    margin-bottom: 5px; /* Margen inferior */
+    vertical-align: top; /* Alineación vertical superior */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para los campos de entrada */
+input {
+    border: solid 1px #ccc; /* Borde sólido de 1px de color gris */
+    border-radius: 3px; /* Radio de borde */
+    display: inline-block; /* Visualización en línea */
+    padding: 0.5rem 0.10rem; /* Relleno */
+    width: 100%; /* Ancho completo */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilos para los campos de entrada de tipo "checkbox" */
+input[type="checkbox"] {
+    width: auto; /* Ancho automático */
+}
+
+/* Estilos para los botones */
+button {
+    width: 100%; /* Ancho completo */
+    background: blue; /* Color de fondo */
+    border-radius: 25px; /* Radio de borde */
+    color: white; /* Color de texto */
+}
+    
