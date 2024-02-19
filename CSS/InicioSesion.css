@@ -2,9 +2,65 @@
 * {
     box-sizing: border-box;
 }
+/* Estilos para la imagen del logo */
+#logo img {
+    height: auto;
+}
 
+/* Estilos para la barra de navegación */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    padding: 13px 13px;
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 13px 13px;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces de la barra de navegación cuando se pasa el ratón sobre ellos */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos responsivos: cuando la pantalla tiene menos de 800px de ancho, hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Estilos responsivos: cuando la pantalla tiene menos de 400px de ancho, hace que los enlaces de navegación se apilen uno encima del otro en lugar de uno al lado del otro */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    * {
+        float: none;
+        width: 100%;
+    }
+}
+/* Estilos para las imágenes dentro de la barra de navegación */
+div.topnav a img {
+    width: 25px;
+    height: auto;
+    margin-top: -10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
 /* Estilos generales para el cuerpo de la página */
-body {
+#Formulario body {
     background-color: rgb(255, 255, 255); /* Color de fondo */
     font-size: 18px; /* Tamaño de fuente */
     font-weight: 300; /* Grosor de la fuente */
@@ -21,6 +77,10 @@ h1 {
 
 /* Estilos para el formulario */
 #Formulario {
+    position: absolute; /* Posición absoluta para centrar */
+    top: 62%; /* Ubicación vertical al 50% de la página */
+    left: 50%; /* Ubicación horizontal al 50% de la página */
+    transform: translate(-50%, -50%); /* Mover el formulario hacia arriba y hacia la izquierda en un 50% de su propio tamaño */
     background-color: #ccc; /* Color de fondo */
     border-radius: 5px; /* Radio de borde */
     width: 300px; /* Ancho del formulario */
