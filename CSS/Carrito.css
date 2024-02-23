@@ -59,3 +59,25 @@ div.topnav a img {
     margin-right: 20px;
     margin-bottom: 10px;
 }
+
+div.gallery {
+    margin: 110px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 190px;
+  }
+  
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  button{
+    padding-left: 10px;
+    width: 100%;
+  }

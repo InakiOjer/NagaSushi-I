@@ -77,13 +77,10 @@ h1 {
 
 /* Estilos para el formulario */
 #Formulario {
-    position: absolute; /* Posición absoluta para centrar */
-    top: 62%; /* Ubicación vertical al 50% de la página */
-    left: 50%; /* Ubicación horizontal al 50% de la página */
-    transform: translate(-50%, -50%); /* Mover el formulario hacia arriba y hacia la izquierda en un 50% de su propio tamaño */
     background-color: #ccc; /* Color de fondo */
     border-radius: 5px; /* Radio de borde */
-    width: 300px; /* Ancho del formulario */
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
 }
 
 /* Estilos para el formulario dentro de un contenedor */
@@ -136,4 +133,32 @@ button {
     border-radius: 25px; /* Radio de borde */
     color: white; /* Color de texto */
 }
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+  
+  /* Fake image */
+  .fakeimg {
+    width: 100%;
+  }
     
+  div.fakeimg > p > img{
+    width: 400px;
+    
+  }
+ p {
+    width: 100%;
+ }
