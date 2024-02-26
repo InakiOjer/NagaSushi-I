@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 /* Estilos para la imagen del logo */
 #logo img {
     height: auto;
@@ -32,7 +33,9 @@
 
 /* Estilos responsivos: cuando la pantalla tiene menos de 800px de ancho, hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+
+    .leftcolumn,
+    .rightcolumn {
         width: 100%;
         padding: 0;
     }
@@ -45,12 +48,14 @@
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1024px) {
     * {
         float: none;
         width: 100%;
     }
 }
+
 /* Estilos para las imágenes dentro de la barra de navegación */
 div.topnav a img {
     width: 25px;
@@ -59,106 +64,194 @@ div.topnav a img {
     margin-right: 20px;
     margin-bottom: 10px;
 }
+
 /* Estilos generales para el cuerpo de la página */
 #Formulario body {
-    background-color: rgb(255, 255, 255); /* Color de fondo */
-    font-size: 18px; /* Tamaño de fuente */
-    font-weight: 300; /* Grosor de la fuente */
-    display: flex; /* Flexbox para centrar contenido vertical y horizontalmente */
-    align-items: center; /* Alinea verticalmente */
-    justify-content: center; /* Alinea horizontalmente */
-    min-height: 100vh; /* Altura mínima igual al 100% del viewport */
+    background-color: rgb(255, 255, 255);
+    /* Color de fondo */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    font-weight: 300;
+    /* Grosor de la fuente */
+    display: flex;
+    /* Flexbox para centrar contenido vertical y horizontalmente */
+    align-items: center;
+    /* Alinea verticalmente */
+    justify-content: center;
+    /* Alinea horizontalmente */
+    min-height: 100vh;
+    /* Altura mínima igual al 100% del viewport */
 }
 
 /* Estilos para los títulos */
 h1 {
-    color: black; /* Color de texto */
+    color: black;
+    /* Color de texto */
 }
 
 /* Estilos para el formulario */
 #Formulario {
-    background-color: #ccc; /* Color de fondo */
-    border-radius: 5px; /* Radio de borde */
-    max-width: 300px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra horizontalmente el formulario */
+    background-color: #ccc;
+    /* Color de fondo */
+    border-radius: 5px;
+    /* Radio de borde */
+    max-width: 300px;
+    /* Ancho máximo del formulario */
+    margin: 0 auto;
+    /* Centra horizontalmente el formulario */
 }
 
 /* Estilos para el formulario dentro de un contenedor */
 form {
-    max-width: 400px; /* Ancho máximo del formulario */
-    margin: 10px auto; /* Margen superior e inferior de 10px, centrado horizontalmente */
-    padding: 0.5rem 1rem; /* Relleno del formulario */
+    max-width: 400px;
+    /* Ancho máximo del formulario */
+    margin: 10px auto;
+    /* Margen superior e inferior de 10px, centrado horizontalmente */
+    padding: 0.5rem 1rem;
+    /* Relleno del formulario */
 }
 
 /* Estilos para los títulos dentro del formulario */
 form h1 {
-    padding: 5px 0; /* Relleno superior e inferior */
-    font-size: 1.4rem; /* Tamaño de fuente */
-    font-weight: normal; /* Grosor de la fuente */
-    text-align: center; /* Alineación centrada */
+    padding: 5px 0;
+    /* Relleno superior e inferior */
+    font-size: 1.4rem;
+    /* Tamaño de fuente */
+    font-weight: normal;
+    /* Grosor de la fuente */
+    text-align: center;
+    /* Alineación centrada */
 }
 
 /* Estilos para todos los elementos */
 #todo {
-    margin-bottom: 0.75rem; /* Margen inferior */
+    margin-bottom: 0.75rem;
+    /* Margen inferior */
 }
 
 /* Estilos para las etiquetas */
 label {
-    display: inline-block; /* Visualización en línea */
-    margin-bottom: 5px; /* Margen inferior */
-    vertical-align: top; /* Alineación vertical superior */
-    width: 100%; /* Ancho completo */
+    display: inline-block;
+    /* Visualización en línea */
+    margin-bottom: 5px;
+    /* Margen inferior */
+    vertical-align: top;
+    /* Alineación vertical superior */
+    width: 100%;
+    /* Ancho completo */
 }
 
 /* Estilos para los campos de entrada */
 input {
-    border: solid 1px #ccc; /* Borde sólido de 1px de color gris */
-    border-radius: 3px; /* Radio de borde */
-    display: inline-block; /* Visualización en línea */
-    padding: 0.5rem 0.10rem; /* Relleno */
-    width: 100%; /* Ancho completo */
-    font-size: 1rem; /* Tamaño de fuente */
+    border: solid 1px #ccc;
+    /* Borde sólido de 1px de color gris */
+    border-radius: 3px;
+    /* Radio de borde */
+    display: inline-block;
+    /* Visualización en línea */
+    padding: 0.5rem 0.10rem;
+    /* Relleno */
+    width: 100%;
+    /* Ancho completo */
+    font-size: 1rem;
+    /* Tamaño de fuente */
 }
 
 /* Estilos para los campos de entrada de tipo "checkbox" */
 input[type="checkbox"] {
-    width: auto; /* Ancho automático */
+    width: auto;
+    /* Ancho automático */
 }
 
 /* Estilos para los botones */
 button {
-    width: 100%; /* Ancho completo */
-    background: blue; /* Color de fondo */
-    border-radius: 25px; /* Radio de borde */
-    color: white; /* Color de texto */
+    width: 100%;
+    /* Ancho completo */
+    background: blue;
+    /* Color de fondo */
+    border-radius: 25px;
+    /* Radio de borde */
+    color: white;
+    /* Color de texto */
 }
+
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 33.33%;
     padding: 15px;
-  }
-  
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:600px) {
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
     .column {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 
-  
-  /* Fake image */
-  .fakeimg {
+
+/* Fake image */
+.fakeimg {
     width: 100%;
-  }
-    
-  div.fakeimg > p > img{
+    margin-left: 40px;
+}
+
+div.fakeimg>p>img {
     width: 400px;
-    
-  }
- p {
+
+}
+
+p {
     width: 100%;
- }
+}
+
+.titulo {
+    text-align: center;
+}
+
+.Precio {
+    background-color: white;
+    border-radius: 25%;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dere {
+    background-color: #ccc;
+    border: 5px solid red;
+}

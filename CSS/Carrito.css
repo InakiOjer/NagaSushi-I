@@ -2,8 +2,9 @@
 * {
     box-sizing: border-box;
 }
+
 /* Estilos para la imagen del logo */
-#logo img {
+div#logo {
     height: auto;
 }
 
@@ -32,7 +33,9 @@
 
 /* Estilos responsivos: cuando la pantalla tiene menos de 800px de ancho, hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+
+    .leftcolumn,
+    .rightcolumn {
         width: 100%;
         padding: 0;
     }
@@ -45,12 +48,14 @@
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1024px) {
     * {
         float: none;
         width: 100%;
     }
 }
+
 /* Estilos para las imágenes dentro de la barra de navegación */
 div.topnav a img {
     width: 25px;
@@ -60,24 +65,73 @@ div.topnav a img {
     margin-bottom: 10px;
 }
 
-div.gallery {
-    margin: 110px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 190px;
-  }
-  
-  
-  div.gallery img {
+table {
     width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-radius: 25PX;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.xd {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
     text-align: center;
-  }
-  button{
-    padding-left: 10px;
-    width: 100%;
-  }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
