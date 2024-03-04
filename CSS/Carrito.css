@@ -23,6 +23,7 @@ div#logo {
     text-align: center;
     padding: 13px 13px;
     text-decoration: none;
+    border-radius: 25px;
 }
 
 /* Estilos para los enlaces de la barra de navegación cuando se pasa el ratón sobre ellos */
@@ -30,6 +31,11 @@ div#logo {
     background-color: #ddd;
     color: black;
 }
+.topnav a.active {
+    background-color: #ccc; /* Cambia el color de fondo */
+    color:black; /* Cambia el color del texto */
+}
+
 
 /* Estilos responsivos: cuando la pantalla tiene menos de 800px de ancho, hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
 @media screen and (max-width: 800px) {
@@ -75,7 +81,9 @@ td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    border-radius: 25PX;
+    border-radius: 25PX
+    
+    ;
 }
 
 tr:hover {

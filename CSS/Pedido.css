@@ -23,12 +23,18 @@
     text-align: center;
     padding: 13px 13px;
     text-decoration: none;
+    border-radius: 25px;
 }
 
 /* Estilos para los enlaces de la barra de navegación cuando se pasa el ratón sobre ellos */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+}
+.topnav a.active {
+
+    background-color: #ccc; /* Cambia el color de fondo */
+    color:black; /* Cambia el color del texto */
 }
 
 /* Estilos responsivos: cuando la pantalla tiene menos de 800px de ancho, hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
@@ -68,7 +74,7 @@ div.topnav a img {
 
 
 .container img {
-   size: 50%;
+    size: 50%;
     object-fit: cover;
     object-position: center;
 }
